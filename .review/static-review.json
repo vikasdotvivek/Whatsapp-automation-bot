@@ -1,0 +1,41 @@
+{
+  "generator": "repository-static-triage",
+  "version": "1.0",
+  "repository": "vikasdotvivek/Whatsapp-automation-bot",
+  "revision": "34013203fabc3c3e068a3693c4fca90440149080",
+  "tracked_files": 3,
+  "scanned": [
+    {
+      "path": "Whatsapp-bot.py",
+      "lines": 75,
+      "bytes": 1900
+    }
+  ],
+  "skipped": [
+    {
+      "path": ".github/workflows/code-improvement-review.yml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "README.md",
+      "reason": "non-source format; content not audited"
+    }
+  ],
+  "manifests": [],
+  "conventional_test_paths": [],
+  "findings": [
+    {
+      "rule": "python3-parse",
+      "priority": "P1",
+      "path": "Whatsapp-bot.py",
+      "line": 34,
+      "title": "Does not parse with the audit runner Python 3",
+      "recommendation": "Confirm the intended Python version. This may be legacy Python 2 rather than an unintended syntax error; compile with the supported interpreter.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/Whatsapp-automation-bot/blob/34013203fabc3c3e068a3693c4fca90440149080/Whatsapp-bot.py#L34"
+    }
+  ],
+  "total_findings": 1,
+  "findings_omitted": 0,
+  "execution": "No repository code, tests, builds or hardware were executed."
+}
